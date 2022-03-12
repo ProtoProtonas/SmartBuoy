@@ -2,7 +2,6 @@
 #include "MotorController.h"
 
 #define LED1 D0
-#define LED2 D4
 
 bool has50msPassed = false;
 bool hasOneSecondPassed = false;
@@ -28,13 +27,11 @@ void manageTiming()
   {
     lastOneSecondMillis = currentMillis;
     hasOneSecondPassed = true;
-    digitalWrite(LED2, LOW);
   }
 }
 
 void setup() {
   pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
   
   Serial.begin(9600);
   Serial.println("Serial connection initialized");
@@ -61,7 +58,8 @@ void loop() {
       motorController.cutMotors(); // cut motors
     }
 
-//    Serial.println("50ms");
+    Serial.print("50ms - GPS lock is ");
+    Serial.println(navigator.isGPSLocked());
     has50msPassed = false;
     digitalWrite(LED1, HIGH);
   }
@@ -75,7 +73,6 @@ void loop() {
     
 //    Serial.println("One second");
     hasOneSecondPassed = false;
-    digitalWrite(LED2, HIGH);
   }
 
   manageTiming();

@@ -35,7 +35,7 @@ class MotorDriver
     const uint8_t  _Motor2PWMPin        = 15; // EN4
     
     const bool     _Motor1IsForward     = true; // hardcoded constant for motor direction
-    const bool     _Motor2IsForward     = true; // hardcoded constant for motor direction
+    const bool     _Motor2IsForward     = false; // hardcoded constant for motor direction
 
     const uint16_t _FullSpeed           = 1023;
 

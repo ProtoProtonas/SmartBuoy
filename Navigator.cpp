@@ -1,4 +1,5 @@
 #include "Navigator.h"
+#include <math.h>
 
 
 Navigator::Navigator()

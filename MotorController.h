@@ -1,5 +1,6 @@
 #include "MotorDriver.h"
 
+
 #ifndef MOTORCONTROLLER_H
 #define MOTORCONTROLLER_H
 
@@ -17,10 +18,14 @@ class MotorController
     void cutMotors();
 
   private:
-    // private constants
+    // private variables
     double offsetBetweenCompassAndMotors = 0.0;
+    double headingBetweenMotor1AndNorth = 0.0;
+    double motor1Speed = 0.0;
+    double motor2Speed = 0.0;
 
     // private methods
+    double _degreesToRadians(double degreeInput);
 
     // private objects
     MotorDriver _motorDriver;
