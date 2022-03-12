@@ -43,24 +43,25 @@ void setup() {
 void loop() {
   if(has50msPassed)
   {
-//    // update compass and motor stuff
-//
-//    // update compass readout
-//    navigator.updateHeadingToTarget();
-//    
-//    // get desired heading
-//    // update motor outputs according to the heading
-//    
-//    if(navigator.getDistanceToTarget() <= targetDistanceError)
-//    {
-//      motorController.cutMotors(); // cut motors
-//    }
-//    else
-//    {
-//      motorController.updateMotorsByHeading(navigator.getHeadingToTarget());
-//    }
+    // update compass and motor stuff
 
-    Serial.println("50ms");    
+    // update compass readout
+    navigator.updateHeadingToTarget();
+    
+    // get desired heading
+    // update motor outputs according to the heading
+    
+    if((navigator.getDistanceToTarget() >= targetDistanceError) &&
+       (navigator.isGPSLocked()))
+    {
+      motorController.updateMotorsByHeading(navigator.getHeadingToTarget());
+    }
+    else
+    {
+      motorController.cutMotors(); // cut motors
+    }
+
+//    Serial.println("50ms");
     has50msPassed = false;
     digitalWrite(LED1, HIGH);
   }
@@ -68,11 +69,11 @@ void loop() {
   if(hasOneSecondPassed)
   {
     // update GPS and cut motors if in range
-//    navigator.updateDistanceToTarget();
+    navigator.updateDistanceToTarget();
     
     // recalculate magnetic heading and gps distance to target
     
-    Serial.println("One second");
+//    Serial.println("One second");
     hasOneSecondPassed = false;
     digitalWrite(LED2, HIGH);
   }

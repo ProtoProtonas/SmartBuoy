@@ -16,9 +16,9 @@ class Navigator
     double headingToTarget_ = 0.0;
 
     // public methods
-    // main method which controls everything. Call every 100ms
     double getDistanceToTarget();
     double getHeadingToTarget();
+    bool isGPSLocked();
     
     void updateDistanceToTarget();
     void updateHeadingToTarget();

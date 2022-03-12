@@ -22,11 +22,11 @@ void GPS::updateCoordinates()
         
         currentLatitudeAverager.updateWithNewValue(instantaneousDeviceLatitude_);
         currentLongitudeAverager.updateWithNewValue(instantaneousDeviceLongitude_);
-        isGPSActive_ = true;
+        isGPSLocked_ = true;
       }
       else
       {
-        isGPSActive_ = false;
+        isGPSLocked_ = false;
       }
     }
   }

@@ -19,7 +19,7 @@ class GPS
     // class variables
     double instantaneousDeviceLatitude_;
     double instantaneousDeviceLongitude_;
-    bool isGPSActive_ = false;
+    bool isGPSLocked_ = false;
 
     // public methods
     void updateCoordinates();

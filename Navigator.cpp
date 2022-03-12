@@ -66,3 +66,8 @@ double Navigator::getHeadingToTarget()
 {
   return headingToTarget_;
 }
+
+bool Navigator::isGPSLocked()
+{
+  return _gps.isGPSLocked_;
+}
