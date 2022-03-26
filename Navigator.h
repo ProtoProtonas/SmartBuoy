@@ -32,8 +32,8 @@ class Navigator
     double _homeLongitude = 0.0;
     double _currentLatitude;
     double _currentLongitude;
-    double _destinationLatitude = 0.0;
-    double _destinationLongitude = 0.0;
+    double _destinationLatitude = 10.0;
+    double _destinationLongitude = 10.0;
 
     bool _compassUpdateSuccessful;
     bool _gpsUpdateSuccessful;

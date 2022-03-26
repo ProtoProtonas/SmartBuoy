@@ -32,7 +32,6 @@ void manageTiming()
 
 void setup() {
   pinMode(LED1, OUTPUT);
-  
   Serial.begin(9600);
   Serial.println("Serial connection initialized");
 }
@@ -40,26 +39,22 @@ void setup() {
 void loop() {
   if(has50msPassed)
   {
-    // update compass and motor stuff
-
-    // update compass readout
     navigator.updateHeadingToTarget();
-    
-    // get desired heading
-    // update motor outputs according to the heading
     
     if((navigator.getDistanceToTarget() >= targetDistanceError) &&
        (navigator.isGPSLocked()))
     {
       motorController.updateMotorsByHeading(navigator.getHeadingToTarget());
+      Serial.print(motorController.motor1Speed, 10);
+      Serial.print(" | ");
+      Serial.print(motorController.motor2Speed, 10);
+      Serial.print(" | ");
+      Serial.println(navigator.getHeadingToTarget());
     }
     else
     {
       motorController.cutMotors(); // cut motors
     }
-
-    Serial.print("50ms - GPS lock is ");
-    Serial.println(navigator.isGPSLocked());
     has50msPassed = false;
     digitalWrite(LED1, HIGH);
   }
@@ -70,8 +65,6 @@ void loop() {
     navigator.updateDistanceToTarget();
     
     // recalculate magnetic heading and gps distance to target
-    
-//    Serial.println("One second");
     hasOneSecondPassed = false;
   }
 

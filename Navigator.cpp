@@ -53,8 +53,10 @@ void Navigator::updateHeadingToTarget()
   _compassUpdateSuccessful = _compass.readHeadingFromSensor();
   if(_compassUpdateSuccessful)
   {
-    _compassHeadingToMagneticNorth = _compass.heading_;
+    _compassHeadingToMagneticNorth = static_cast<double>(_compass.heading_);
     headingToTarget_ = _findBearing(_currentLatitude, _currentLongitude, _destinationLatitude, _destinationLongitude);
+    // čia
+    headingToTarget_ = headingToTarget_ + _compassHeadingToMagneticNorth;
   }
 }
 
@@ -65,7 +67,7 @@ double Navigator::getDistanceToTarget()
 
 double Navigator::getHeadingToTarget()
 {
-  return headingToTarget_;
+  return _compassHeadingToMagneticNorth;
 }
 
 bool Navigator::isGPSLocked()
