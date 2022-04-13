@@ -24,7 +24,7 @@ double Navigator::_findBearing(double latitudePoint1, double longitudePoint1, do
     double secondArgument = cos(latitudePoint1) * sin(latitudePoint2) - cos(deltaLongitude) * cos(latitudePoint2) * sin(latitudePoint1);
     if(longitudePoint1 > longitudePoint2)
     {
-        return _radiansToDegrees(atan2(firstArgument, secondArgument)) + 360.0;
+        return _radiansToDegrees(atan2(firstArgument, secondArgument));
     }
     return _radiansToDegrees(atan2(firstArgument, secondArgument));
 }
@@ -67,7 +67,7 @@ double Navigator::getDistanceToTarget()
 
 double Navigator::getHeadingToTarget()
 {
-  return _compassHeadingToMagneticNorth;
+  return headingToTarget_;
 }
 
 bool Navigator::isGPSLocked()

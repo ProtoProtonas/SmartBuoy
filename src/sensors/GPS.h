@@ -6,7 +6,7 @@
 #include <SoftwareSerial.h>
 #include <stdint.h>
 #include <TinyGPS++.h>
-#include "Average.h"
+#include "../assistance/Average.h"
 
 
 class GPS

@@ -1,5 +1,5 @@
-#include "GPS.h"
-#include "Compass.h"
+#include "../sensors/GPS.h"
+#include "../sensors/Compass.h"
 
 #ifndef NAVIGATOR_H
 #define NAVIGATOR_H

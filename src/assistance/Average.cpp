@@ -12,17 +12,17 @@ MovingAverage::MovingAverage()
 
 void MovingAverage::updateWithNewValue(double newValue)
 {
-  if(_currentWriteIndex < WINDOW_LENGTH)
-  {
-    _sampleArray[_currentWriteIndex] = newValue;
-  }
-  
-  // update write index
-  _currentWriteIndex++;
-  if(_currentWriteIndex >= WINDOW_LENGTH)
-  {
-    _currentWriteIndex = 0;
-  }
+    if(_currentWriteIndex < WINDOW_LENGTH)
+    {
+        _sampleArray[_currentWriteIndex] = newValue;
+    }
+
+    // update write index
+    _currentWriteIndex++;
+    if(_currentWriteIndex >= WINDOW_LENGTH)
+    {
+        _currentWriteIndex = 0;
+    }
 }
 
 

@@ -1,5 +1,5 @@
-#include "Navigator.h"
-#include "MotorController.h"
+#include "src/logic/Navigator.h"
+#include "src/logic/MotorController.h"
 
 #define LED1 D0
 
@@ -14,60 +14,55 @@ double targetDistanceError = 5.0;
 Navigator navigator;
 MotorController motorController;
 
-void manageTiming()
+void manageTiming() 
 {
   currentMillis = millis();
-  if(currentMillis - last50msMillis >= 50)
+  if (currentMillis - last50msMillis >= 50) 
   {
     last50msMillis = currentMillis;
     has50msPassed = true;
     digitalWrite(LED1, LOW);
   }
-  if(currentMillis - lastOneSecondMillis >= 1000)
+  if (currentMillis - lastOneSecondMillis >= 1000) 
   {
     lastOneSecondMillis = currentMillis;
     hasOneSecondPassed = true;
   }
 }
 
-void setup() {
+void setup() 
+{
   pinMode(LED1, OUTPUT);
-  Serial.begin(9600);
-  Serial.println("Serial connection initialized");
 }
 
 void loop() {
-  if(has50msPassed)
-  {
-    navigator.updateHeadingToTarget();
-    
-    if((navigator.getDistanceToTarget() >= targetDistanceError) &&
-       (navigator.isGPSLocked()))
+    if (has50msPassed) 
     {
-      motorController.updateMotorsByHeading(navigator.getHeadingToTarget());
-      Serial.print(motorController.motor1Speed, 10);
-      Serial.print(" | ");
-      Serial.print(motorController.motor2Speed, 10);
-      Serial.print(" | ");
-      Serial.println(navigator.getHeadingToTarget());
+        navigator.updateHeadingToTarget();
+
+        if ((navigator.getDistanceToTarget() >= targetDistanceError) &&
+        (navigator.isGPSLocked())) 
+        {
+            motorController.updateMotorsByHeading(navigator.getHeadingToTarget());
+        } 
+        else 
+        {
+            motorController.cutMotors();
+        }
+
+        has50msPassed = false;
+        digitalWrite(LED1, HIGH);
     }
-    else
+
+    if (hasOneSecondPassed) 
     {
-      motorController.cutMotors(); // cut motors
+        // update GPS and cut motors if in range
+        navigator.updateDistanceToTarget();
+
+        // recalculate magnetic heading and gps distance to target
+        hasOneSecondPassed = false;
+        digitalWrite(LED1, LOW);
     }
-    has50msPassed = false;
-    digitalWrite(LED1, HIGH);
-  }
 
-  if(hasOneSecondPassed)
-  {
-    // update GPS and cut motors if in range
-    navigator.updateDistanceToTarget();
-    
-    // recalculate magnetic heading and gps distance to target
-    hasOneSecondPassed = false;
-  }
-
-  manageTiming();
-  
+    manageTiming();
 }

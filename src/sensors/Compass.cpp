@@ -32,6 +32,9 @@ bool Compass::readHeadingFromSensor()
 
 void Compass::updateHeadingVariables()
 {
-  //heading_ = 1000*_hundreds + 100*_tens + 10*_units + _fraction;
-  heading_ = 100*_hundreds + 10*_tens + _units;
+  if(_updateSuccess)
+  {
+    //heading_ = 1000*_hundreds + 100*_tens + 10*_units + _fraction;
+    heading_ = 100*_hundreds + 10*_tens + _units;
+  }
 }
