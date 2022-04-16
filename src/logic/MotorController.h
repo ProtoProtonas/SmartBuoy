@@ -6,28 +6,28 @@
 
 class MotorController
 {
-  public:
-  
-    // constructor
-    MotorController();
+    public:
 
-    // class variables
+        // constructor
+        MotorController();
 
-    // public methods
-    void updateMotorsByHeading(double compassHeading);
-    void cutMotors();
+        // class variables
 
-  private:
-    // private variables
-    double headingBetweenMotor1AndNorth = 0.0;
-    
-    double motor1Speed = 0.0;
-    double motor2Speed = 0.0;
+        // public methods
+        void updateMotorsByHeading(double compassHeading);
+        void cutMotors();
 
-    // private methods
+    private:
+        // private variables
+        double headingBetweenMotor1AndNorth = 0.0;
 
-    // private objects
-    MotorDriver _motorDriver;
+        double motor1Speed = 0.0;
+        double motor2Speed = 0.0;
+
+        // private methods
+
+        // private objects
+        MotorDriver _motorDriver;
 
 };
 

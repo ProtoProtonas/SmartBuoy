@@ -6,46 +6,46 @@
 
 class Navigator
 {
-  public:
-  
-    // constructor
-    Navigator();
+    public:
 
-    // class variables
-    double distanceToTarget_ = 999.999;
-    double headingToTarget_ = 0.0;
+        // constructor
+        Navigator();
 
-    // public methods
-    double getDistanceToTarget();
-    double getHeadingToTarget();
-    bool isGPSLocked();
-    
-    void updateDistanceToTarget();
-    void updateHeadingToTarget();
+        // class variables
+        double distanceToTarget_ = 999.999;
+        double headingToTarget_ = 0.0;
 
-  private:
-    // private variables
-    double _currentTargetLatitude;
-    double _currentTargetLongitude;
+        // public methods
+        double getDistanceToTarget();
+        double getHeadingToTarget();
+        bool isGPSLocked();
 
-    double _currentLatitude;
-    double _currentLongitude;
+        void updateDistanceToTarget();
+        void updateHeadingToTarget();
 
-    bool _compassUpdateSuccessful;
-    bool _gpsUpdateSuccessful;
+    private:
+        // private variables
+        double _currentTargetLatitude;
+        double _currentTargetLongitude;
 
-    uint16_t _compassHeadingToMagneticNorth = 0;    
+        double _currentLatitude;
+        double _currentLongitude;
 
-    // private methods
-    double _findBearing(double latitudePoint1, double longitudePoint1, double latitudePoint2, double longitudePoint2);
-    double _findDistance(double latitudePoint1, double longitudePoint1, double latitudePoint2, double longitudePoint2);
+        bool _compassUpdateSuccessful;
+        bool _gpsUpdateSuccessful;
 
-    // private objects
-    GPS _gps;
-    Compass _compass;
+        uint16_t _compassHeadingToMagneticNorth = 0;    
 
-    // private constants
-    const double earthRadius = 6371000.0;
+        // private methods
+        double _findBearing(double latitudePoint1, double longitudePoint1, double latitudePoint2, double longitudePoint2);
+        double _findDistance(double latitudePoint1, double longitudePoint1, double latitudePoint2, double longitudePoint2);
+
+        // private objects
+        GPS _gps;
+        Compass _compass;
+
+        // private constants
+        const double earthRadius = 6371000.0;
 
 };
 

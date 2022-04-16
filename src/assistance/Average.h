@@ -7,18 +7,18 @@
 
 class MovingAverage
 {
-  public:
-  
-    // constructor
-    MovingAverage();
+    public:
 
-    // public methods
-    void updateWithNewValue(double newValue);
-    double getAverage();
+        // constructor
+        MovingAverage();
 
-  private:
-    double _sampleArray[WINDOW_LENGTH];
-    uint8_t _currentWriteIndex = 0;
+        // public methods
+        void updateWithNewValue(double newValue);
+        double getAverage();
+
+    private:
+        double _sampleArray[WINDOW_LENGTH];
+        uint8_t _currentWriteIndex = 0;
 };
 
 #endif

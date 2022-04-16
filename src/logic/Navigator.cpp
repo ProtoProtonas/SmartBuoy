@@ -32,35 +32,35 @@ double Navigator::_findDistance(double latitudePoint1, double longitudePoint1, d
 
 void Navigator::updateDistanceToTarget()
 {
-  _gps.updateCoordinates();
-  _currentLatitude = _gps.getAveragedLatitude();
-  _currentLongitude = _gps.getAveragedLongitude();
-  
-  distanceToTarget_ = _findDistance(_currentLatitude, _currentLongitude, global.destinationLatitude, global.destinationLongitude);
+    _gps.updateCoordinates();
+    _currentLatitude = _gps.getAveragedLatitude();
+    _currentLongitude = _gps.getAveragedLongitude();
+
+    distanceToTarget_ = _findDistance(_currentLatitude, _currentLongitude, global.destinationLatitude, global.destinationLongitude);
 }
 
 void Navigator::updateHeadingToTarget()
 {
-  _compassUpdateSuccessful = _compass.readHeadingFromSensor();
-  if(_compassUpdateSuccessful)
-  {
-    _compassHeadingToMagneticNorth = static_cast<double>(_compass.heading_);
-    headingToTarget_ = _findBearing(_currentLatitude, _currentLongitude, global.destinationLatitude, global.destinationLongitude);
-    headingToTarget_ = headingToTarget_ + _compassHeadingToMagneticNorth;
-  }
+    _compassUpdateSuccessful = _compass.readHeadingFromSensor();
+    if(_compassUpdateSuccessful)
+    {
+        _compassHeadingToMagneticNorth = static_cast<double>(_compass.heading_);
+        headingToTarget_ = _findBearing(_currentLatitude, _currentLongitude, global.destinationLatitude, global.destinationLongitude);
+        headingToTarget_ = headingToTarget_ + _compassHeadingToMagneticNorth;
+    }
 }
 
 double Navigator::getDistanceToTarget()
 {
-  return distanceToTarget_;
+    return distanceToTarget_;
 }
 
 double Navigator::getHeadingToTarget()
 {
-  return headingToTarget_;
+    return headingToTarget_;
 }
 
 bool Navigator::isGPSLocked()
 {
-  return _gps.isGPSLocked_;
+    return _gps.isGPSLocked_;
 }

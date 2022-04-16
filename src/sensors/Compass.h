@@ -9,27 +9,27 @@
 
 class Compass
 {
-  public:
-  
-    // constructor
-    Compass();
+    public:
 
-    // class variables
-    uint32_t heading_;
+        // constructor
+        Compass();
 
-    // public methods
-    bool readHeadingFromSensor();
-    void updateHeadingVariables();
+        // class variables
+        uint32_t heading_;
 
-  private:
-    // private constants
-    const uint8_t _softwareSerialRXPin = 5;
-    const uint8_t _softwareSerialTXPin = 4;
-    bool _updateSuccess = true;
-    uint16_t _hundreds, _tens, _units, _fraction;
+        // public methods
+        bool readHeadingFromSensor();
+        void updateHeadingVariables();
 
-    // private objects
-    SoftwareSerial _compassSoftwareSerial;
+    private:
+        // private constants
+        const uint8_t _softwareSerialRXPin = 5;
+        const uint8_t _softwareSerialTXPin = 4;
+        bool _updateSuccess = true;
+        uint16_t _hundreds, _tens, _units, _fraction;
+
+        // private objects
+        SoftwareSerial _compassSoftwareSerial;
 };
 
 #endif

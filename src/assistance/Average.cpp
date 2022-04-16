@@ -4,10 +4,10 @@
 
 MovingAverage::MovingAverage()
 {
-  for(uint8_t i = 0; i < WINDOW_LENGTH; i++)
-  {
-    _sampleArray[i] = 0;
-  }
+    for(uint8_t i = 0; i < WINDOW_LENGTH; i++)
+    {
+        _sampleArray[i] = 0;
+    }
 }
 
 void MovingAverage::updateWithNewValue(double newValue)
@@ -28,14 +28,14 @@ void MovingAverage::updateWithNewValue(double newValue)
 
 double MovingAverage::getAverage()
 {
-  double average = 0;
-  double sum = 0;
-  
-  for(uint8_t i = 0; i < WINDOW_LENGTH; i++)
-  {
-    sum += _sampleArray[i];
-  }
-  average = sum / WINDOW_LENGTH;
-  
-  return average;
+    double average = 0;
+    double sum = 0;
+
+    for(uint8_t i = 0; i < WINDOW_LENGTH; i++)
+    {
+        sum += _sampleArray[i];
+    }
+    average = sum / WINDOW_LENGTH;
+
+    return average;
 }

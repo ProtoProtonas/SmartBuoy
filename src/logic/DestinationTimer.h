@@ -5,27 +5,27 @@
 
 class DestinationTimer
 {
-  public:
-  
-    // constructor
-    DestinationTimer();
+    public:
 
-    // class variables
+        // constructor
+        DestinationTimer();
 
-    // public methods
-    bool isItTimeToGoHome();
+        // class variables
 
-    
-  private:
-    // private variables
-    unsigned long int _timeOfGPSLock = 0;
-    unsigned long int _timeWhenFirstDestinationWasReached = 0;
+        // public methods
+        bool isItTimeToGoHome();
 
-    unsigned long int _timeSinceStart = 0;
 
-    // private methods
+    private:
+        // private variables
+        unsigned long int _timeOfGPSLock = 0;
+        unsigned long int _timeWhenFirstDestinationWasReached = 0;
 
-    // private objects
+        unsigned long int _timeSinceStart = 0;
+
+        // private methods
+
+        // private objects
 
 };
 

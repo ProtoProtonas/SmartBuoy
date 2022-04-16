@@ -1,5 +1,4 @@
 #include "DestinationTimer.h"
-// #include "../../Variables.h"
 
 DestinationTimer::DestinationTimer()
 {

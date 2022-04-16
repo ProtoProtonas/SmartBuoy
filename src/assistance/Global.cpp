@@ -8,12 +8,12 @@ Global global;
 
 Global::Global()
 {
-  // constructor
+    // constructor
 }
 
 double Global::degreesToRadians(double degreeInput)
 {
-  return degreeInput * atan(1) / 45;
+    return degreeInput * atan(1) / 45;
 }
 
 double Global::radiansToDegrees(double radianInput)

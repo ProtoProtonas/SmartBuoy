@@ -16,23 +16,23 @@ MotorController motorController;
 
 void manageTiming() 
 {
-  currentMillis = millis();
-  if (currentMillis - last50msMillis >= 50) 
-  {
-    last50msMillis = currentMillis;
-    has50msPassed = true;
-    digitalWrite(LED1, LOW);
-  }
-  if (currentMillis - lastOneSecondMillis >= 1000) 
-  {
-    lastOneSecondMillis = currentMillis;
-    hasOneSecondPassed = true;
-  }
+    currentMillis = millis();
+    if (currentMillis - last50msMillis >= 50) 
+    {
+        last50msMillis = currentMillis;
+        has50msPassed = true;
+        digitalWrite(LED1, LOW);
+    }
+    if (currentMillis - lastOneSecondMillis >= 1000) 
+    {
+        lastOneSecondMillis = currentMillis;
+        hasOneSecondPassed = true;
+    }
 }
 
 void setup() 
 {
-  pinMode(LED1, OUTPUT);
+    pinMode(LED1, OUTPUT);
 }
 
 void loop() {
@@ -41,7 +41,7 @@ void loop() {
         navigator.updateHeadingToTarget();
 
         if ((navigator.getDistanceToTarget() >= global.targetDistanceError) &&
-        (navigator.isGPSLocked())) 
+            (navigator.isGPSLocked())) 
         {
             motorController.updateMotorsByHeading(navigator.getHeadingToTarget());
         } 

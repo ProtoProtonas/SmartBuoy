@@ -5,39 +5,39 @@
 GPS::GPS() :
   _GPSSoftwareSerial(_softwareSerialRXPin, _softwareSerialTXPin)
 {
-  // constructor
-  _GPSSoftwareSerial.begin(9600);
+    // constructor
+    _GPSSoftwareSerial.begin(9600);
 }
 
 void GPS::updateCoordinates()
 {
-  while(_GPSSoftwareSerial.available() > 0)
-  {
-    if(_tinyGpsDecoder.encode(_GPSSoftwareSerial.read()))
+    while(_GPSSoftwareSerial.available() > 0)
     {
-      if(_tinyGpsDecoder.location.isValid())
-      {
-        instantaneousDeviceLatitude_ = _tinyGpsDecoder.location.lat();
-        instantaneousDeviceLongitude_ = _tinyGpsDecoder.location.lng();
-        
-        currentLatitudeAverager.updateWithNewValue(instantaneousDeviceLatitude_);
-        currentLongitudeAverager.updateWithNewValue(instantaneousDeviceLongitude_);
-        isGPSLocked_ = true;
-      }
-      else
-      {
-        isGPSLocked_ = false;
-      }
+        if(_tinyGpsDecoder.encode(_GPSSoftwareSerial.read()))
+        {
+            if(_tinyGpsDecoder.location.isValid())
+            {
+                instantaneousDeviceLatitude_ = _tinyGpsDecoder.location.lat();
+                instantaneousDeviceLongitude_ = _tinyGpsDecoder.location.lng();
+
+                currentLatitudeAverager.updateWithNewValue(instantaneousDeviceLatitude_);
+                currentLongitudeAverager.updateWithNewValue(instantaneousDeviceLongitude_);
+                isGPSLocked_ = true;
+            }
+            else
+            {
+                isGPSLocked_ = false;
+            }
+        }
     }
-  }
 }
 
 double GPS::getAveragedLatitude()
 {
-  return currentLatitudeAverager.getAverage();
+    return currentLatitudeAverager.getAverage();
 }
 
 double GPS::getAveragedLongitude()
 {
-  return currentLongitudeAverager.getAverage();
+    return currentLongitudeAverager.getAverage();
 }
