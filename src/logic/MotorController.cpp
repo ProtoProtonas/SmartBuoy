@@ -10,7 +10,7 @@ MotorController::MotorController()
 
 void MotorController::updateMotorsByHeading(double compassHeading)
 {
-  headingBetweenMotor1AndNorth = compassHeading - offsetBetweenCompassAndMotors;
+  headingBetweenMotor1AndNorth = compassHeading - global.offsetBetweenCompassAndMotors;
   motor1Speed = sin(global.degreesToRadians(headingBetweenMotor1AndNorth));
   motor2Speed = cos(global.degreesToRadians(headingBetweenMotor1AndNorth));
 

@@ -1,5 +1,6 @@
 #include "src/logic/Navigator.h"
 #include "src/logic/MotorController.h"
+#include "src/assistance/Global.h"
 
 #define LED1 D0
 
@@ -9,7 +10,6 @@ unsigned long last50msMillis = 0.0;
 unsigned long lastOneSecondMillis = 0.0;
 unsigned long currentMillis = 0.0;
 
-double targetDistanceError = 5.0;
 
 Navigator navigator;
 MotorController motorController;
@@ -40,7 +40,7 @@ void loop() {
     {
         navigator.updateHeadingToTarget();
 
-        if ((navigator.getDistanceToTarget() >= targetDistanceError) &&
+        if ((navigator.getDistanceToTarget() >= global.targetDistanceError) &&
         (navigator.isGPSLocked())) 
         {
             motorController.updateMotorsByHeading(navigator.getHeadingToTarget());

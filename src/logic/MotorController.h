@@ -19,7 +19,6 @@ class MotorController
 
   private:
     // private variables
-    double offsetBetweenCompassAndMotors = 0.0;
     double headingBetweenMotor1AndNorth = 0.0;
     
     double motor1Speed = 0.0;

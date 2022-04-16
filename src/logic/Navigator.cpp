@@ -36,7 +36,7 @@ void Navigator::updateDistanceToTarget()
   _currentLatitude = _gps.getAveragedLatitude();
   _currentLongitude = _gps.getAveragedLongitude();
   
-  distanceToTarget_ = _findDistance(_currentLatitude, _currentLongitude, _destinationLatitude, _destinationLongitude);
+  distanceToTarget_ = _findDistance(_currentLatitude, _currentLongitude, global.destinationLatitude, global.destinationLongitude);
 }
 
 void Navigator::updateHeadingToTarget()
@@ -45,7 +45,7 @@ void Navigator::updateHeadingToTarget()
   if(_compassUpdateSuccessful)
   {
     _compassHeadingToMagneticNorth = static_cast<double>(_compass.heading_);
-    headingToTarget_ = _findBearing(_currentLatitude, _currentLongitude, _destinationLatitude, _destinationLongitude);
+    headingToTarget_ = _findBearing(_currentLatitude, _currentLongitude, global.destinationLatitude, global.destinationLongitude);
     headingToTarget_ = headingToTarget_ + _compassHeadingToMagneticNorth;
   }
 }
