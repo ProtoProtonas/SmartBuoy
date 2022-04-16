@@ -15,13 +15,16 @@ class DestinationTimer
         // public methods
         bool isItTimeToGoHome();
 
+        void updateTime(unsigned long int currentMillis);
+
+        void updateTimeWhenBuoyPositionWasReached();
 
     private:
         // private variables
-        unsigned long int _timeOfGPSLock = 0;
-        unsigned long int _timeWhenFirstDestinationWasReached = 0;
+        unsigned long int _timeWhenBuoyDestinationWasReached = 0;
+        unsigned long int _currentMillis = 0;
 
-        unsigned long int _timeSinceStart = 0;
+        bool _destinationReachedTimeSetFlag = false;
 
         // private methods
 

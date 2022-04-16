@@ -5,7 +5,9 @@
 
 Navigator::Navigator()
 {
-  // constructor
+    // constructor
+    _currentTargetLatitude  = global.destinationLatitude;
+    _currentTargetLongitude = global.destinationLongitude;
 }
 
 double Navigator::_findBearing(double latitudePoint1, double longitudePoint1, double latitudePoint2, double longitudePoint2)
@@ -29,14 +31,26 @@ double Navigator::_findDistance(double latitudePoint1, double longitudePoint1, d
     return earthRadius * c;
 }
 
-
-void Navigator::updateDistanceToTarget()
+void Navigator::updateDistanceToTarget(unsigned long int currentMillis)
 {
     _gps.updateCoordinates();
     _currentLatitude = _gps.getAveragedLatitude();
     _currentLongitude = _gps.getAveragedLongitude();
 
-    distanceToTarget_ = _findDistance(_currentLatitude, _currentLongitude, global.destinationLatitude, global.destinationLongitude);
+    distanceToTarget_ = _findDistance(_currentLatitude, _currentLongitude, _currentTargetLatitude, _currentTargetLongitude);
+
+    // handle changing target coordinates and how long to stay in position
+    _destinationTimer.updateTime(currentMillis);
+    if(distanceToTarget_ < global.targetDistanceError)
+    {
+        _destinationTimer.updateTimeWhenBuoyPositionWasReached();
+    }
+
+    if(_destinationTimer.isItTimeToGoHome())
+    {
+        _currentTargetLatitude  = global.homeLatitude;
+        _currentTargetLongitude = global.homeLongitude;
+    }
 }
 
 void Navigator::updateHeadingToTarget()
@@ -45,7 +59,7 @@ void Navigator::updateHeadingToTarget()
     if(_compassUpdateSuccessful)
     {
         _compassHeadingToMagneticNorth = static_cast<double>(_compass.heading_);
-        headingToTarget_ = _findBearing(_currentLatitude, _currentLongitude, global.destinationLatitude, global.destinationLongitude);
+        headingToTarget_ = _findBearing(_currentLatitude, _currentLongitude, _currentTargetLatitude, _currentTargetLongitude);
         headingToTarget_ = headingToTarget_ + _compassHeadingToMagneticNorth;
     }
 }

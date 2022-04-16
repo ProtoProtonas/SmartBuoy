@@ -57,7 +57,7 @@ void loop() {
     if (hasOneSecondPassed) 
     {
         // update GPS and cut motors if in range
-        navigator.updateDistanceToTarget();
+        navigator.updateDistanceToTarget(currentMillis);
 
         // recalculate magnetic heading and gps distance to target
         hasOneSecondPassed = false;

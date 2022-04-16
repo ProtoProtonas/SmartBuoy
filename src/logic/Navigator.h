@@ -1,5 +1,6 @@
 #include "../sensors/GPS.h"
 #include "../sensors/Compass.h"
+#include "DestinationTimer.h"
 
 #ifndef NAVIGATOR_H
 #define NAVIGATOR_H
@@ -20,7 +21,7 @@ class Navigator
         double getHeadingToTarget();
         bool isGPSLocked();
 
-        void updateDistanceToTarget();
+        void updateDistanceToTarget(unsigned long int currentMillis);
         void updateHeadingToTarget();
 
     private:
@@ -43,6 +44,7 @@ class Navigator
         // private objects
         GPS _gps;
         Compass _compass;
+        DestinationTimer _destinationTimer;
 
         // private constants
         const double earthRadius = 6371000.0;
