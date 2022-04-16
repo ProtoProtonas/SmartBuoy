@@ -41,8 +41,6 @@ class Navigator
     uint16_t _compassHeadingToMagneticNorth = 0;    
 
     // private methods
-    double _degreesToRadians(double degreeInput);
-    double _radiansToDegrees(double radianInput);
     double _findBearing(double latitudePoint1, double longitudePoint1, double latitudePoint2, double longitudePoint2);
     double _findDistance(double latitudePoint1, double longitudePoint1, double latitudePoint2, double longitudePoint2);
 

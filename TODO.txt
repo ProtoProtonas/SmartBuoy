@@ -1,0 +1,5 @@
+DONE: Global variables header file
+DONE: Move radian functions to one file and have only one declaration
+Remake averager into template (so the length of the buffer can be defined for each individual object separately)
+Add timing to change destination coordinates based on time passed (put buoy in water, buoy swims to destination ant after 15min returns)
+Add pin definitions file (maybe?)

@@ -1,3 +1,4 @@
+#include "../assistance/Global.h"
 #include "Navigator.h"
 #include <math.h>
 
@@ -7,16 +8,6 @@ Navigator::Navigator()
   // constructor
 }
 
-double Navigator::_degreesToRadians(double degreeInput)
-{
-    return degreeInput * atan(1) / 45;
-}
-
-double Navigator::_radiansToDegrees(double radianInput)
-{
-    return radianInput * 45 / atan(1);
-}
-
 double Navigator::_findBearing(double latitudePoint1, double longitudePoint1, double latitudePoint2, double longitudePoint2)
 {
     double deltaLongitude = longitudePoint2 - longitudePoint1;
@@ -24,9 +15,9 @@ double Navigator::_findBearing(double latitudePoint1, double longitudePoint1, do
     double secondArgument = cos(latitudePoint1) * sin(latitudePoint2) - cos(deltaLongitude) * cos(latitudePoint2) * sin(latitudePoint1);
     if(longitudePoint1 > longitudePoint2)
     {
-        return _radiansToDegrees(atan2(firstArgument, secondArgument));
+        return global.radiansToDegrees(atan2(firstArgument, secondArgument));
     }
-    return _radiansToDegrees(atan2(firstArgument, secondArgument));
+    return global.radiansToDegrees(atan2(firstArgument, secondArgument));
 }
 
 double Navigator::_findDistance(double latitudePoint1, double longitudePoint1, double latitudePoint2, double longitudePoint2)
@@ -55,7 +46,6 @@ void Navigator::updateHeadingToTarget()
   {
     _compassHeadingToMagneticNorth = static_cast<double>(_compass.heading_);
     headingToTarget_ = _findBearing(_currentLatitude, _currentLongitude, _destinationLatitude, _destinationLongitude);
-    // čia
     headingToTarget_ = headingToTarget_ + _compassHeadingToMagneticNorth;
   }
 }
