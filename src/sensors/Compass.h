@@ -5,6 +5,7 @@
 
 #include <stdint.h>
 #include <SoftwareSerial.h>
+#include "../assistance/Averager.h"
 
 
 class Compass
@@ -15,19 +16,22 @@ class Compass
         Compass();
 
         // class variables
-        uint32_t heading_;
 
         // public methods
         bool readHeadingFromSensor();
         void updateHeadingVariables();
+        int getAveragedCompassHeading();
 
     private:
         // private constants
         bool _updateSuccess = true;
-        uint16_t _hundreds, _tens, _units, _fraction;
+        int _hundreds, _tens, _units, _fraction;
+        int _instantaneousHeading;
+        short _averagerWindowLength = 5;
 
         // private objects
         SoftwareSerial _compassSoftwareSerial;
+        Averager<int> _compassHeadingAverager;
 };
 
 #endif

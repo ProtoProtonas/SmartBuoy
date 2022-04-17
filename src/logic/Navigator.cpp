@@ -58,7 +58,7 @@ void Navigator::updateHeadingToTarget()
     _compassUpdateSuccessful = _compass.readHeadingFromSensor();
     if(_compassUpdateSuccessful)
     {
-        _compassHeadingToMagneticNorth = static_cast<double>(_compass.heading_);
+        _compassHeadingToMagneticNorth = static_cast<double>(_compass.getAveragedCompassHeading());
         headingToTarget_ = _findBearing(_currentLatitude, _currentLongitude, _currentTargetLatitude, _currentTargetLongitude);
         headingToTarget_ = headingToTarget_ + _compassHeadingToMagneticNorth;
     }

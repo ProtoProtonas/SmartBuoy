@@ -4,7 +4,9 @@
 #include "../assistance/PinDefines.h"
 
 GPS::GPS() :
-    _GPSSoftwareSerial(GPS_SOFTWARE_SERIAL_RX_PIN, GPS_SOFTWARE_SERIAL_TX_PIN)
+    _GPSSoftwareSerial(GPS_SOFTWARE_SERIAL_RX_PIN, GPS_SOFTWARE_SERIAL_TX_PIN),
+    currentLatitudeAverager(_averagerWindowLength),
+    currentLongitudeAverager(_averagerWindowLength)
 {
     // constructor
     _GPSSoftwareSerial.begin(9600);

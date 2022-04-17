@@ -6,7 +6,7 @@
 #include <SoftwareSerial.h>
 #include <stdint.h>
 #include <TinyGPS++.h>
-#include "../assistance/Average.h"
+#include "../assistance/Averager.h"
 
 
 class GPS
@@ -28,12 +28,13 @@ class GPS
 
     private:
         // private constants
+        const short _averagerWindowLength = 20;
 
         // private objects
         SoftwareSerial _GPSSoftwareSerial;
         TinyGPSPlus _tinyGpsDecoder;
-        MovingAverage currentLatitudeAverager;
-        MovingAverage currentLongitudeAverager;
+        Averager<double> currentLatitudeAverager;
+        Averager<double> currentLongitudeAverager;
 };
 
 #endif
