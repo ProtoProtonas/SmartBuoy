@@ -39,7 +39,7 @@ void Navigator::updateDistanceToTarget(unsigned long int currentMillis)
 
     distanceToTarget_ = _findDistance(_currentLatitude, _currentLongitude, _currentTargetLatitude, _currentTargetLongitude);
 
-    // handle changing target coordinates and how long to stay in position
+    // handle changing target coordinates and how long to stay in buoy position
     _destinationTimer.updateTime(currentMillis);
     if(distanceToTarget_ < global.targetDistanceError)
     {

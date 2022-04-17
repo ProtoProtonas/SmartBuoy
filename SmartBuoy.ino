@@ -1,8 +1,8 @@
 #include "src/logic/Navigator.h"
 #include "src/logic/MotorController.h"
 #include "src/assistance/Global.h"
+#include "src/assistance/PinDefines.h"
 
-#define LED1 D0
 
 bool has50msPassed = false;
 bool hasOneSecondPassed = false;

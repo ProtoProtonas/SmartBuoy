@@ -1,9 +1,10 @@
 #include "GPS.h"
 #include <TinyGPS++.h>
 #include <SoftwareSerial.h>
+#include "../assistance/PinDefines.h"
 
 GPS::GPS() :
-  _GPSSoftwareSerial(_softwareSerialRXPin, _softwareSerialTXPin)
+    _GPSSoftwareSerial(GPS_SOFTWARE_SERIAL_RX_PIN, GPS_SOFTWARE_SERIAL_TX_PIN)
 {
     // constructor
     _GPSSoftwareSerial.begin(9600);

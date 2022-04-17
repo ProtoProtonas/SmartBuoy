@@ -1,7 +1,8 @@
 #include "Compass.h"
+#include "../assistance/PinDefines.h"
 
 Compass::Compass() :
-    _compassSoftwareSerial(_softwareSerialRXPin, _softwareSerialTXPin)
+    _compassSoftwareSerial(COMPASS_SOFTWARE_SERIAL_RX_PIN, COMPASS_SOFTWARE_SERIAL_TX_PIN)
 {
     // constructor
     _compassSoftwareSerial.begin(9600);  

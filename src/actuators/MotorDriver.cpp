@@ -1,4 +1,5 @@
 #include "MotorDriver.h"
+#include "../assistance/PinDefines.h"
 
 #if ARDUINO >= 100
 #include "Arduino.h"
@@ -13,8 +14,8 @@
 MotorDriver::MotorDriver()
 {
     // constructor
-    pinMode(_Motor1DirectionPin, OUTPUT);
-    pinMode(_Motor2DirectionPin, OUTPUT);
+    pinMode(MOTOR_1_DIRECTION_PIN, OUTPUT);
+    pinMode(MOTOR_2_DIRECTION_PIN, OUTPUT);
 }
 
 void MotorDriver::setMotor1(double speedAndDirection)
@@ -69,26 +70,26 @@ void MotorDriver::_updateMotor1Output()
 {
     if(_Motor1Direction != _Motor1IsForward)
     {
-        analogWrite(_Motor1PWMPin, _Motor1Speed);
+        analogWrite(MOTOR_1_PWM_PIN, _Motor1Speed);
     }
     else
     {
-        analogWrite(_Motor1PWMPin,  MAX_ALLOWED_SPEED - _Motor1Speed);
+        analogWrite(MOTOR_1_PWM_PIN,  MAX_ALLOWED_SPEED - _Motor1Speed);
     }
-    digitalWrite(_Motor1DirectionPin,(_Motor1Direction == _Motor1IsForward));
+    digitalWrite(MOTOR_1_DIRECTION_PIN,(_Motor1Direction == _Motor1IsForward));
 }
 
 void MotorDriver::_updateMotor2Output()
 {
     if(_Motor2Direction != _Motor2IsForward)
     {
-        analogWrite(_Motor2PWMPin, _Motor2Speed);
+        analogWrite(MOTOR_2_PWM_PIN, _Motor2Speed);
     }
     else
     {
-        analogWrite(_Motor2PWMPin,  MAX_ALLOWED_SPEED - _Motor2Speed);
+        analogWrite(MOTOR_2_PWM_PIN,  MAX_ALLOWED_SPEED - _Motor2Speed);
     }
-    digitalWrite(_Motor2DirectionPin, (_Motor2Direction == _Motor2IsForward));
+    digitalWrite(MOTOR_2_DIRECTION_PIN, (_Motor2Direction == _Motor2IsForward));
 }
 
 void MotorDriver::_stopMotor1()

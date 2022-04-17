@@ -28,8 +28,6 @@ class GPS
 
     private:
         // private constants
-        const uint8_t _softwareSerialRXPin = 2;
-        const uint8_t _softwareSerialTXPin = 0;
 
         // private objects
         SoftwareSerial _GPSSoftwareSerial;

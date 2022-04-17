@@ -23,8 +23,6 @@ class Compass
 
     private:
         // private constants
-        const uint8_t _softwareSerialRXPin = 5;
-        const uint8_t _softwareSerialTXPin = 4;
         bool _updateSuccess = true;
         uint16_t _hundreds, _tens, _units, _fraction;
 
