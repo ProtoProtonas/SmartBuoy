@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP SS110-HF
+D Schottky Diodes & Rectifiers 100V 1A
+K
+F https://www.mouser.de/datasheet/2/80/20190514095348-1621763.pdf
+$ENDCMP
+#
+$CMP LD29150DT33R
+D STMicroelectronics LD29150DT33R, LDO Regulator, 1.5A, 3.3 V, +/-1% 3-Pin, DPAK
+K
+F http://www.st.com/web/en/resource/technical/document/datasheet/CD00003403.pdf
+$ENDCMP
+#
+#End Doc Library
