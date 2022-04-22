@@ -30,7 +30,7 @@ U 1 1 625CC920
 P 1400 950
 F 0 "IC1" H 2800 950 50  0000 C CNN
 F 1 "AZ34063UMTR-G1" H 2800 800 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm_ThermalVias" H 4050 1050 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4050 1050 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/AZ34063UMTR-G1.pdf" H 4050 950 50  0001 L CNN
 F 4 "1.5A Step-Down/Up DC-DC Converter SOIC8 DiodesZetex AZ34063UMTR-G1 DC-DC Converter, 1.5A Adjustable, 1.25  36 V, Step-Down/Up, 180 kHz, 8-Pin SOIC" H 4050 850 50  0001 L CNN "Description"
 F 5 "1.75" H 4050 750 50  0001 L CNN "Height"
@@ -382,7 +382,7 @@ U 1 1 625EF06D
 P 2600 2600
 F 0 "IC2" H 3200 2865 50  0000 C CNN
 F 1 "LD29150DT33R" H 3200 2774 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2_TabPin1" H 3650 2700 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3650 2700 50  0001 L CNN
 F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00003403.pdf" H 3650 2600 50  0001 L CNN
 F 4 "STMicroelectronics LD29150DT33R, LDO Regulator, 1.5A, 3.3 V, +/-1% 3-Pin, DPAK" H 3650 2500 50  0001 L CNN "Description"
 F 5 "" H 3650 2400 50  0001 L CNN "Height"
@@ -712,6 +712,39 @@ F 1 "VCC" H 3765 3723 50  0000 C CNN
 F 2 "" H 3750 3550 50  0001 C CNN
 F 3 "" H 3750 3550 50  0001 C CNN
 	1    3750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 6263B37B
+P 1350 3650
+F 0 "J6" V 1550 3550 50  0000 L CNN
+F 1 "Conn_01x02" V 1450 3350 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 1350 3650 50  0001 C CNN
+F 3 "~" H 1350 3650 50  0001 C CNN
+	1    1350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 6263D961
+P 1150 3750
+F 0 "#PWR028" H 1150 3500 50  0001 C CNN
+F 1 "GND" H 1155 3577 50  0000 C CNN
+F 2 "" H 1150 3750 50  0001 C CNN
+F 3 "" H 1150 3750 50  0001 C CNN
+	1    1150 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR027
+U 1 1 6263DE78
+P 1150 3650
+F 0 "#PWR027" H 1150 3500 50  0001 C CNN
+F 1 "+3V3" H 1165 3823 50  0000 C CNN
+F 2 "" H 1150 3650 50  0001 C CNN
+F 3 "" H 1150 3650 50  0001 C CNN
+	1    1150 3650
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
