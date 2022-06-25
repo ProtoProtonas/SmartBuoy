@@ -747,4 +747,62 @@ F 3 "" H 1150 3650 50  0001 C CNN
 	1    1150 3650
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 62847B6F
+P 1250 4950
+F 0 "#PWR029" H 1250 4700 50  0001 C CNN
+F 1 "GND" H 1255 4777 50  0000 C CNN
+F 2 "" H 1250 4950 50  0001 C CNN
+F 3 "" H 1250 4950 50  0001 C CNN
+	1    1250 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 628493E2
+P 1450 4400
+F 0 "H1" V 1404 4550 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1495 4550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom" H 1450 4400 50  0001 C CNN
+F 3 "~" H 1450 4400 50  0001 C CNN
+	1    1450 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6284BC0A
+P 1450 4600
+F 0 "H2" V 1404 4750 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1495 4750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom" H 1450 4600 50  0001 C CNN
+F 3 "~" H 1450 4600 50  0001 C CNN
+	1    1450 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 4600 1350 4600
+Wire Wire Line
+	1250 4600 1250 4400
+Wire Wire Line
+	1250 4400 1350 4400
+Connection ~ 1250 4600
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 62B783B1
+P 1450 4800
+F 0 "H3" V 1404 4950 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1495 4950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom" H 1450 4800 50  0001 C CNN
+F 3 "~" H 1450 4800 50  0001 C CNN
+	1    1450 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 4600 1250 4800
+Wire Wire Line
+	1350 4800 1250 4800
+Connection ~ 1250 4800
+Wire Wire Line
+	1250 4800 1250 4950
 $EndSCHEMATC
