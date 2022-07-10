@@ -24,4 +24,10 @@ K
 F https://content.u-blox.com/sites/default/files/MAX-M10S_IntegrationManual_UBX-20053088.pdf
 $ENDCMP
 #
+$CMP YFF18AC0G475MT0Y0E
+D 3-terminal Filters, Insertion Loss=30dB (0.05MHz to 3000MHz), LxWxT: 1.6x0.8x0.8mm
+K
+F https://product.tdk.com/system/files/dam/doc/product/emc/emc/3tf/catalog/3tf_automotive_general_yff-ac_en.pdf
+$ENDCMP
+#
 #End Doc Library
