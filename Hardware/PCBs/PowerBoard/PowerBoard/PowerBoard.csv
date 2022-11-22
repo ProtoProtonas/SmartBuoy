@@ -1,0 +1,23 @@
+﻿Source:,/home/augustas/Desktop/ESP32Buoy/SmartBuoy/Hardware/PCBs/PowerBoard/PowerBoard.kicad_sch
+Date:,Mon 17 Oct 2022 11:23:26 PM EEST
+Tool:,Eeschema (6.0.8)
+Generator:,/usr/share/kicad/plugins/bom_csv_grouped_by_value_with_fp.py
+Component Count:,23
+Ref,Qnty,Value,Cmp name,Footprint,Description,Vendor
+"C1, ",1,100u,C,,Unpolarized capacitor,
+"C2, ",1,1000u,C,,Unpolarized capacitor,
+"C3, ",1,10u,C,,Unpolarized capacitor,
+"C4, ",1,10u,C,Capacitor_SMD:C_1210_3225Metric,Unpolarized capacitor,
+"D1, ",1,1N5822,1N5822,Diode_THT:D_DO-201AD_P15.24mm_Horizontal,"40V 3A Schottky Barrier Rectifier Diode, DO-201AD",
+"D2, D3, ",2,LED,LED,LED_SMD:LED_0603_1608Metric,Light emitting diode,
+"H1, H2, H3, H4, ",4,MountingHole_Pad,MountingHole_Pad,MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom,Mounting Hole with connection,
+"J1, J3, J5, ",3,Screw_Terminal_01x02,Screw_Terminal_01x02,TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J2, ",1,Conn_01x04,Conn_01x04,Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J4, J6, ",2,Conn_01x02,Conn_01x02,Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"L1, ",1,100u,L,,Inductor,
+"R3, ",1,100k,R,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,Resistor,
+"R4, ",1,200k,R,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,Resistor,
+"U1, ",1,L298HN,L298HN,Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical,"Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-H",
+"U2, ",1,LM2576HVS-5,LM2576HVS-5,Package_TO_SOT_SMD:TO-263-5_TabPin3,"5V 3A, SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-263",
+"U3, ",1,NCP1117-3.3_SOT223,NCP1117-3.3_SOT223,Package_TO_SOT_SMD:SOT-223-3_TabPin2,"1A Low drop-out regulator, Fixed Output 3.3V, SOT-223",
+,,,,,,

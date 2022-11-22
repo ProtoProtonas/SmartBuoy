@@ -1,0 +1,14 @@
+﻿Source:,/home/augustas/Desktop/ESP32Buoy/SmartBuoy/Hardware/PCBs/GPSBoard/GPSBoard/GPSBoard.sch
+Date:,Fri 14 Oct 2022 10:23:32 PM EEST
+Tool:,Eeschema (6.0.8)
+Generator:,/usr/share/kicad/plugins/bom_csv_grouped_by_value_with_fp.py
+Component Count:,7
+Ref,Qnty,Value,Cmp name,Footprint,Description,Vendor
+"C1, ",1,C,C,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,Unpolarized capacitor,
+"C2, ",1,C_Feedthrough,C_Feedthrough,YFF18AC0G475MT0Y0E:YFF18AC,Feedthrough capacitor,
+"J1, ",1,Conn_01x04,Conn_01x04,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J2, ",1,Conn_Coaxial,Conn_Coaxial,Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical,"coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)",
+"L1, ",1,L,L,Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder,Inductor,
+"L2, ",1,27nH,L,Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder,Inductor,
+"R1, ",1,10,R,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,Resistor,
+,,,,,,
