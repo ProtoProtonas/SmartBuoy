@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP YFF15PC1A224MT000N
+D 3-terminal Filters, Insertion Loss=40dB (4MHz to 1000MHz), LxWxT: 1x0.55x0.3mm
+K
+F https://componentsearchengine.com/Datasheets/1/YFF15PC1A224MT000N.pdf
+$ENDCMP
+#
+#End Doc Library

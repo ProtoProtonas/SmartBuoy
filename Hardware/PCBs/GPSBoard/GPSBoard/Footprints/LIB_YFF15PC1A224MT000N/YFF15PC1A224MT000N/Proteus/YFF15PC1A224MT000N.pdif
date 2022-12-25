@@ -1,0 +1,123 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "YFF15PC1A224MT000N"
+   (description "3-terminal Filters, Insertion Loss=40dB (4MHz to 1000MHz), LxWxT: 1x0.55x0.3mm")
+   (family "ANA")
+   (package "YFF15PC")
+   (attribute "Datasheet Link" "https://componentsearchengine.com/Datasheets/1/YFF15PC1A224MT000N.pdf")
+   (attribute "Mouser Part Number" "810-YFF15PC1A224M")
+   (attribute "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=810-YFF15PC1A224M")
+   (attribute "Manufacturer_Name" "TDK")
+   (attribute "Manufacturer_Part_Number" "YFF15PC1A224MT000N")
+   (gate
+    (symbol "YFF15PC1A224MT000N")
+    (pin "IN/OUT" 1 PS)
+    (pin "GND_1" 2 PS)
+    (pin "OUT/IN" 3 PS)
+    (pin "GND_2" 4 PS)
+   )
+  )
+  (symbol "YFF15PC1A224MT000N"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 500) (pt 1200 500) (pt 1200 -500) (pt 200 -500) (pt 200 500) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 -700) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 700) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "YFF15PC"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -0.525 0.325)
+      (pt 0.525 0.325)
+      (pt 0.525 -0.325)
+      (pt -0.525 -0.325)
+      (pt -0.525 0.325))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2 1.375)
+      (pt 1.65 1.375)
+      (pt 1.65 -1.375)
+      (pt -2 -1.375)
+      (pt -2 1.375))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2 1.375)
+      (pt 1.65 1.375)
+      (pt 1.65 -1.375)
+      (pt -2 -1.375)
+      (pt -2 1.375))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1 0)
+      (arc (pt -1.000 0.000) (pt -1.000 -0.050) (pt -0.900 0.050) (start 180.0) (sweep 180.0))
+      (pt -0.9 0)
+      (arc (pt -0.900 0.000) (pt -1.000 -0.050) (pt -0.900 0.050) (start 180.0) (sweep .0))
+      (pt -1 0))))
+   (leg 1 (pt -0.500 0.000) (padstack 0))
+   (leg 2 (pt 0.000 -0.250) (padstack 2))
+   (leg 3 (pt 0.500 0.000) (padstack 0))
+   (leg 4 (pt 0.000 0.250) (padstack 4))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.300 0.600 0 0 90.000))
+   )
+   (padstack 2
+    (plated false)
+    (pad (layer TCOP) (rectf 0.190 0.250 0 0 90.000))
+   )
+   (padstack 4
+    (plated false)
+    (pad (layer TCOP) (rectf 0.190 0.250 0 0 90.000))
+   )
+   (model "YFF15PC1A224MT000N.stp"
+    (euler -90 0 90)
+    (offset 0 0 0.15000000596046448)
+   )
+  )
+ )
+)

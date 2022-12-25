@@ -1,0 +1,73 @@
+(Japanese_coding: sjis)
+(function "ECS_1080935"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-10-20-10:10:57)
+    (utime 2022-02-15-10:53:08)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+        (port "4" (symbPinId 4) (portType INOUT))
+    )
+    (property "symbolName" "YFF15PC1A224MT000N")
+)
+
+
+(pinAssign "ECS_1080935"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-10-20-10:10:57)
+    (utime 2022-02-15-10:53:08)
+    (interface
+        (port "1" (symbPinId 1) (portName "IN/OUT") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "GND_1") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "OUT/IN") (portType INOUT))
+        (port "4" (symbPinId 4) (portName "GND_2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_1080935")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+                (port "4" (match "4"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "YFF15PC1A224MT000N")
+)
+
+
+(part "YFF15PC1A224MT000N"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-10-20-10:10:57)
+    (utime 2022-02-15-10:53:08)
+    (packageRef "YFF15PC1A224MT000N")
+    (pinAssignRef "ECS_1080935")
+    (interface
+        (port "1" (symbPinId 1) (portName "IN/OUT") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "GND_1") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "OUT/IN") (portType INOUT))
+        (port "4" (symbPinId 4) (portName "GND_2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "FL")
+    (property "description" "3-terminal Filters, Insertion Loss=40dB (4MHz to 1000MHz), LxWxT: 1x0.55x0.3mm")
+    (property "Mouser_Part_Number" "810-YFF15PC1A224M")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=810-YFF15PC1A224M")
+    (property "Manufacturer_Name" "TDK")
+    (property "Manufacturer_Part_Number" "YFF15PC1A224MT000N")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/1/YFF15PC1A224MT000N.pdf")
+)
+
+

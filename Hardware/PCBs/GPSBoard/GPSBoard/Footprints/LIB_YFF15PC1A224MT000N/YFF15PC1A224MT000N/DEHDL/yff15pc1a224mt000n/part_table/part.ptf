@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'YFF15PC1A224MT000N'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "TDK", "YFF15PC1A224MT000N" (!) = "", "YFF15PC", "Other", "810-YFF15PC1A224M", "https://www.mouser.com/Search/Refine.aspx?Keyword=810-YFF15PC1A224M", "3-terminal Filters, Insertion Loss=40dB (4MHz to 1000MHz), LxWxT: 1x0.55x0.3mm", "https://componentsearchengine.com/Datasheets/1/YFF15PC1A224MT000N.pdf"
+END_PART
+
+END.

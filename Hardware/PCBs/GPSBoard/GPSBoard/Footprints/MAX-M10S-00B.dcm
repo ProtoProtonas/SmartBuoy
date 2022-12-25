@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX-M10S-00B
+D GPS Modules u-blox M10 GNSS LCC module, firmware in ROM, SAW filter, LNA
+K
+F https://content.u-blox.com/sites/default/files/MAX-M10S_IntegrationManual_UBX-20053088.pdf
+$ENDCMP
+#
+#End Doc Library

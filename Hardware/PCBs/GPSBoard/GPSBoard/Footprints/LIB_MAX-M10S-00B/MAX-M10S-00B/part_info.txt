@@ -1,0 +1,9 @@
+Manufacturer=U-Blox
+PartNumber=MAX-M10S-00B
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=18
+Version=1.4
+Released=2022-05-30 08:07:20
+Downloaded=2022-12-17 22:23:28
+3D=Y

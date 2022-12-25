@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "KiCad")(type "KiCad")(uri "${KIPRJMOD}/Footprints/KiCad")(options "")(descr ""))
+  (lib (name "YFF18AC0G475MT0Y0E")(type "Legacy")(uri "${KIPRJMOD}/Footprints/KiCad/YFF18AC0G475MT0Y0E.mod")(options "")(descr ""))
+)

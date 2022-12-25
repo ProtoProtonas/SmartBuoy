@@ -1,0 +1,9 @@
+Manufacturer=TDK
+PartNumber=YFF15PC1A224MT000N
+PartCategory=Filter
+PackageCategory=Other
+PinCount=4
+Version=1.1
+Released=2021-10-20 10:10:57
+Downloaded=2022-12-21 19:56:49
+3D=Y

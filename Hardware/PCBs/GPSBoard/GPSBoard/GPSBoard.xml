@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/home/augustas/Desktop/ESP32Buoy/SmartBuoy/Hardware/PCBs/GPSBoard/GPSBoard/GPSBoard.sch</source>
-    <date>Fri 14 Oct 2022 10:23:32 PM EEST</date>
-    <tool>Eeschema (6.0.8)</tool>
+    <source>C:\Users\Augustas\Desktop\shrot\projektukai\ESP32buoy\git\SmartBuoy\Hardware\PCBs\GPSBoard\GPSBoard\GPSBoard.kicad_sch</source>
+    <date>2022-12-19 19:59:45</date>
+    <tool>Eeschema (6.0.9)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
         <company/>
         <rev/>
         <date/>
-        <source>GPSBoard.sch</source>
+        <source>GPSBoard.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -29,25 +29,122 @@
       <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="File: /home/augustas/Desktop/ESP32Buoy/SmartBuoy/Hardware/PCBs/GPSBoard/GPSBoard/GPSBoard.sch"/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062c6a992</tstamps>
     </comp>
     <comp ref="C2">
-      <value>C_Feedthrough</value>
+      <value>&lt;12pF</value>
       <footprint>YFF18AC0G475MT0Y0E:YFF18AC</footprint>
       <libsource lib="Device" part="C_Feedthrough" description="Feedthrough capacitor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="File: /home/augustas/Desktop/ESP32Buoy/SmartBuoy/Hardware/PCBs/GPSBoard/GPSBoard/GPSBoard.sch"/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062c76f9a</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>ESD9B3.3ST5G</value>
+      <footprint>Diode_SMD:D_SOD-923</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF</datasheet>
+      <libsource lib="Diode" part="ESD9B3.3ST5G" description="ESD protection diode, 3.3Vrwm, SOD-923"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>15e99a29-59e3-488b-bf50-7481c5b48e30</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>152923dd-b131-454a-abdc-3fa9254fefc8</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09093547-fb33-4b5a-a0c8-34569264c644</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96258d8c-50ca-479f-9e48-50f7065959dc</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6865f72b-8c16-42dd-a9c4-5a167f09a729</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0bcf5f4c-e7f5-411a-bf1c-930b021f6785</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83d3574e-9e88-46e1-8774-bfd341a3d824</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>984ea744-1358-48a4-860d-79970e70ddf9</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>MAX-M10S-00B</value>
+      <footprint>UBLOX_GPS:MAXM10S00B</footprint>
+      <datasheet>https://content.u-blox.com/sites/default/files/MAX-M10S_IntegrationManual_UBX-20053088.pdf</datasheet>
+      <fields>
+        <field name="Description">GPS Modules u-blox M10 GNSS LCC module, firmware in ROM, SAW filter, LNA</field>
+        <field name="Height">2.7</field>
+        <field name="Manufacturer_Name">U-Blox</field>
+        <field name="Manufacturer_Part_Number">MAX-M10S-00B</field>
+        <field name="Mouser Part Number">377-MAX-M10S-00B</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/u-blox/MAX-M10S-00B?qs=A6eO%252BMLsxmT0PfQYPb7LLQ%3D%3D</field>
+      </fields>
+      <libsource lib="New_Library" part="MAX-M10S-00B" description="GPS Modules u-blox M10 GNSS LCC module, firmware in ROM, SAW filter, LNA"/>
+      <property name="Description" value="GPS Modules u-blox M10 GNSS LCC module, firmware in ROM, SAW filter, LNA"/>
+      <property name="Height" value="2.7"/>
+      <property name="Mouser Part Number" value="377-MAX-M10S-00B"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/u-blox/MAX-M10S-00B?qs=A6eO%252BMLsxmT0PfQYPb7LLQ%3D%3D"/>
+      <property name="Manufacturer_Name" value="U-Blox"/>
+      <property name="Manufacturer_Part_Number" value="MAX-M10S-00B"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>53d90e99-676b-4920-b9e8-63b59bbc8274</tstamps>
     </comp>
     <comp ref="J1">
       <value>Conn_01x04</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="File: /home/augustas/Desktop/ESP32Buoy/SmartBuoy/Hardware/PCBs/GPSBoard/GPSBoard/GPSBoard.sch"/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062c7b797</tstamps>
     </comp>
@@ -57,16 +154,16 @@
       <datasheet> ~</datasheet>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="File: /home/augustas/Desktop/ESP32Buoy/SmartBuoy/Hardware/PCBs/GPSBoard/GPSBoard/GPSBoard.sch"/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062c6425f</tstamps>
     </comp>
     <comp ref="L1">
-      <value>L</value>
+      <value>100s uH</value>
       <footprint>Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder</footprint>
       <libsource lib="Device" part="L" description="Inductor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="File: /home/augustas/Desktop/ESP32Buoy/SmartBuoy/Hardware/PCBs/GPSBoard/GPSBoard/GPSBoard.sch"/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062c69b47</tstamps>
     </comp>
@@ -75,7 +172,7 @@
       <footprint>Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder</footprint>
       <libsource lib="Device" part="L" description="Inductor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="File: /home/augustas/Desktop/ESP32Buoy/SmartBuoy/Hardware/PCBs/GPSBoard/GPSBoard/GPSBoard.sch"/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062c5d95d</tstamps>
     </comp>
@@ -84,9 +181,36 @@
       <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="File: /home/augustas/Desktop/ESP32Buoy/SmartBuoy/Hardware/PCBs/GPSBoard/GPSBoard/GPSBoard.sch"/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062c5e4e3</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>55</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3577eb33-e28f-48c6-8f2b-c91d66a8e5f8</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>55</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ae91b13-18c6-4bcb-bf1c-7d7334227dab</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>55</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GPSBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5139ab92-b6c9-432e-b840-1912e0d667b1</tstamps>
     </comp>
   </components>
   <libparts>
@@ -178,6 +302,24 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="R">
       <description>Resistor</description>
       <docs>~</docs>
@@ -194,53 +336,190 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Diode" part="ESD9B3.3ST5G">
+      <description>ESD protection diode, 3.3Vrwm, SOD-923</description>
+      <docs>https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF</docs>
+      <footprints>
+        <fp>D*SOD?923*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">ESD9B3.3ST5G</field>
+        <field name="Footprint">Diode_SMD:D_SOD-923</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="New_Library" part="MAX-M10S-00B">
+      <description>GPS Modules u-blox M10 GNSS LCC module, firmware in ROM, SAW filter, LNA</description>
+      <docs>https://content.u-blox.com/sites/default/files/MAX-M10S_IntegrationManual_UBX-20053088.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">MAX-M10S-00B</field>
+        <field name="Footprint">MAXM10S00B</field>
+        <field name="Datasheet">https://content.u-blox.com/sites/default/files/MAX-M10S_IntegrationManual_UBX-20053088.pdf</field>
+        <field name="Description">GPS Modules u-blox M10 GNSS LCC module, firmware in ROM, SAW filter, LNA</field>
+        <field name="Height">2.7</field>
+        <field name="Mouser Part Number">377-MAX-M10S-00B</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/u-blox/MAX-M10S-00B?qs=A6eO%252BMLsxmT0PfQYPb7LLQ%3D%3D</field>
+        <field name="Manufacturer_Name">U-Blox</field>
+        <field name="Manufacturer_Part_Number">MAX-M10S-00B</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND_1" type="passive"/>
+        <pin num="2" name="TXD" type="passive"/>
+        <pin num="3" name="RXD" type="passive"/>
+        <pin num="4" name="TIMEPULSE" type="passive"/>
+        <pin num="5" name="EXTINT" type="passive"/>
+        <pin num="6" name="V_BCKP" type="passive"/>
+        <pin num="7" name="V_IO" type="passive"/>
+        <pin num="8" name="VCC" type="passive"/>
+        <pin num="9" name="RESET_N" type="passive"/>
+        <pin num="10" name="GND_2" type="passive"/>
+        <pin num="11" name="RF_IN" type="passive"/>
+        <pin num="12" name="GND_3" type="passive"/>
+        <pin num="13" name="LNA_EN" type="passive"/>
+        <pin num="14" name="VCC_RF" type="passive"/>
+        <pin num="15" name="RESERVED" type="passive"/>
+        <pin num="16" name="SDA" type="passive"/>
+        <pin num="17" name="SCL" type="passive"/>
+        <pin num="18" name="SAFEBOOT_N" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector">
-      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
     </library>
     <library logical="Connector_Generic">
-      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
     </library>
     <library logical="Device">
-      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Diode.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="New_Library">
+      <uri>C:\Users\Augustas\Desktop\shrot\projektukai\ESP32buoy\git\SmartBuoy\Hardware\PCBs\GPSBoard\GPSBoard/Footprints/New_Library.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
     <net code="1" name="+3V3">
+      <node ref="IC1" pin="7" pinfunction="V_IO" pintype="passive"/>
+      <node ref="IC1" pin="8" pinfunction="VCC" pintype="passive"/>
       <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
     </net>
     <net code="2" name="GND">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="A1" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H4" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC1" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="IC1" pin="10" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC1" pin="12" pinfunction="GND_3" pintype="passive"/>
       <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J2" pin="2" pinfunction="Ext" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
     </net>
     <net code="3" name="Net-(C2-Pad1)">
       <node ref="C2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
     </net>
-    <net code="4" name="Net-(J2-Pad1)">
-      <node ref="J2" pin="1" pinfunction="In" pintype="passive"/>
-      <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
-    </net>
-    <net code="5" name="Net-(R1-Pad2)">
+    <net code="4" name="Net-(C2-Pad3)">
       <node ref="C2" pin="3" pinfunction="3" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
     </net>
-    <net code="6" name="RX_GPS">
+    <net code="5" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="A2" pintype="passive"/>
+      <node ref="IC1" pin="11" pinfunction="RF_IN" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="In" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(IC1-Pad14)">
+      <node ref="IC1" pin="14" pinfunction="VCC_RF" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="RX_GPS">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="IC1" pin="3" pinfunction="RXD" pintype="passive"/>
       <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="7" name="TX_GPS">
+    <net code="11" name="TX_GPS">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="IC1" pin="2" pinfunction="TXD" pintype="passive"/>
       <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
     </net>
-    <net code="8" name="VCC">
+    <net code="12" name="VCC">
       <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="9" name="unconnected-(R1-Pad1)">
-      <node ref="R1" pin="1" pintype="passive"/>
+    <net code="13" name="unconnected-(IC1-Pad4)">
+      <node ref="IC1" pin="4" pinfunction="TIMEPULSE" pintype="passive+no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(IC1-Pad5)">
+      <node ref="IC1" pin="5" pinfunction="EXTINT" pintype="passive+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(IC1-Pad6)">
+      <node ref="IC1" pin="6" pinfunction="V_BCKP" pintype="passive+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(IC1-Pad9)">
+      <node ref="IC1" pin="9" pinfunction="RESET_N" pintype="passive+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(IC1-Pad13)">
+      <node ref="IC1" pin="13" pinfunction="LNA_EN" pintype="passive+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(IC1-Pad15)">
+      <node ref="IC1" pin="15" pinfunction="RESERVED" pintype="passive+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(IC1-Pad16)">
+      <node ref="IC1" pin="16" pinfunction="SDA" pintype="passive+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(IC1-Pad17)">
+      <node ref="IC1" pin="17" pinfunction="SCL" pintype="passive+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(IC1-Pad18)">
+      <node ref="IC1" pin="18" pinfunction="SAFEBOOT_N" pintype="passive+no_connect"/>
     </net>
   </nets>
 </export>

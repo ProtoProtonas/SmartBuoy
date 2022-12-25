@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "New_Library")(type "KiCad")(uri "${KIPRJMOD}/Footprints/New_Library.kicad_sym")(options "")(descr ""))
+  (lib (name "YFF15PC1A224MT000N")(type "Legacy")(uri "${KIPRJMOD}/Footprints/LIB_YFF15PC1A224MT000N/YFF15PC1A224MT000N/KiCad/YFF15PC1A224MT000N.lib")(options "")(descr ""))
+)

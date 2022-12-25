@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "YFF15PC"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "YFF15PC")
+        (spec "default")
+    )
+)

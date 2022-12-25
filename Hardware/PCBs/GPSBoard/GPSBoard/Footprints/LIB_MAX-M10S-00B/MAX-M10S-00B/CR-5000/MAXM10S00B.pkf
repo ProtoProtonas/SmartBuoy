@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "MAXM10S00B"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "MAXM10S00B")
+        (spec "default")
+    )
+)

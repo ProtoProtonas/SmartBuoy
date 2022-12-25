@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "YFF15PC1A224MT000N"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-10-20-10:10:56)
+    (mountForm default
+        (footprintRef "YFF15PC")
+        (spec "System")
+    )
+)
