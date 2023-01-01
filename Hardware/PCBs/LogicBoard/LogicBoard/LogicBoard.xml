@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Augustas\Desktop\shrot\projektukai\ESP32buoy\git\SmartBuoy\Hardware\PCBs\LogicBoard\LogicBoard\LogicBoard.kicad_sch</source>
+    <date>2023-01-01 17:22:52</date>
+    <tool>Eeschema (6.0.9)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>LogicBoard.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>001d5cdb-7e76-4484-92a8-9997ed79a9b4</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f341ae24-6e47-4b57-947a-fac84a6df9f0</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c5467e7f-c4a2-4327-b6f1-2e29735b7608</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ece835e-ba2d-4673-81da-dbae10b001f5</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3fa25978-691d-4566-b230-073d153a0ee5</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_DIN965</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b92d7ca0-1d41-47d4-ad66-50f3629bce49</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f9c977ce-47f4-4226-bac1-8e0605ce90d4</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>62554c73-ed23-4f91-8ed4-35f95c86f406</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Motor control</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>86469894-200d-4143-b56b-18b4b6a92850</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Power</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa0567a0-f119-4104-8a44-76c5fc623b4e</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>GPS</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>02743968-bec1-458e-9721-ffdcd2d5838d</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Motor current sensing</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>60fb3e75-593e-4060-ab2d-fe2dc44b66a1</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>55</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c33adc3-60ad-4207-9f6c-8788a3919ccd</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>55</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4f1fb38-5c29-4c73-b66c-30630ba3016a</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>55</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08526668-0704-4452-a1c5-7c5863c6bb6e</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>55</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e8519faa-7b55-44d5-823f-cef53fe18656</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>ESP32-C3-DEVKITC-02</value>
+      <footprint>ESP32-C3-DEVKITC-02:XCVR_ESP32-C3-DEVKITC-02</footprint>
+      <fields>
+        <field name="MANUFACTURER">Espressif</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+      </fields>
+      <libsource lib="ESP32-C3-DEVKITC-02" part="ESP32-C3-DEVKITC-02" description=""/>
+      <property name="MANUFACTURER" value="Espressif"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>60442cc9-a6eb-468c-a571-5562f73daad8</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>GY-26</value>
+      <footprint>ESP32:GY-26</footprint>
+      <libsource lib="GY26" part="GY-26" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LogicBoard.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58604e5e-62c4-448d-b2db-9ccebd845c1f</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP32-C3-DEVKITC-02" part="ESP32-C3-DEVKITC-02">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-C3-DEVKITC-02</field>
+        <field name="Footprint">XCVR_ESP32-C3-DEVKITC-02</field>
+        <field name="MANUFACTURER">Espressif</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="3V3" type="power_in"/>
+        <pin num="3" name="3V3" type="power_in"/>
+        <pin num="4" name="RST" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="GPIO4" type="bidirectional"/>
+        <pin num="7" name="GPIO5" type="bidirectional"/>
+        <pin num="8" name="GPIO6" type="bidirectional"/>
+        <pin num="9" name="GPIO7" type="bidirectional"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="GPIO8" type="bidirectional"/>
+        <pin num="12" name="GPIO9" type="bidirectional"/>
+        <pin num="13" name="5V" type="power_in"/>
+        <pin num="14" name="5V" type="power_in"/>
+        <pin num="15" name="GND" type="power_in"/>
+        <pin num="16" name="GND" type="power_in"/>
+        <pin num="17" name="GND" type="power_in"/>
+        <pin num="18" name="GPIO19" type="bidirectional"/>
+        <pin num="19" name="GPIO18" type="bidirectional"/>
+        <pin num="20" name="GND" type="power_in"/>
+        <pin num="21" name="GPIO21/U0TXD" type="bidirectional"/>
+        <pin num="22" name="GPIO20/U0RXD" type="bidirectional"/>
+        <pin num="23" name="GND" type="power_in"/>
+        <pin num="24" name="GPIO10" type="bidirectional"/>
+        <pin num="25" name="GND" type="power_in"/>
+        <pin num="26" name="GPIO3" type="bidirectional"/>
+        <pin num="27" name="GPIO2" type="bidirectional"/>
+        <pin num="28" name="GPIO1/XTAL_32K_N" type="bidirectional"/>
+        <pin num="29" name="GPIO0/XTAL_32K_P" type="bidirectional"/>
+        <pin num="30" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="GY26" part="GY-26">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">GY-26</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="" type="no_connect"/>
+        <pin num="3" name="" type="no_connect"/>
+        <pin num="4" name="CAL" type="input"/>
+        <pin num="5" name="" type="no_connect"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="SDA" type="input"/>
+        <pin num="9" name="SCL" type="input"/>
+        <pin num="10" name="RX" type="input"/>
+        <pin num="11" name="TX" type="output"/>
+        <pin num="12" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="ESP32-C3-DEVKITC-02">
+      <uri>C:\Users\Augustas\Desktop\shrot\projektukai\ESP32buoy\git\SmartBuoy\Hardware\PCBs\LogicBoard\LogicBoard/Footprints/ESP32-C3-DEVKITC-02/ESP32-C3-DEVKITC-02.kicad_sym</uri>
+    </library>
+    <library logical="GY26">
+      <uri>C:/Users/Augustas/Documents/KiCad/6.0/symbols/GY26.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="3V3" pintype="power_in"/>
+      <node ref="U1" pin="3" pinfunction="3V3" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U2" pin="12" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H4" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="10" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="15" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="16" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="17" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="20" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="23" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="25" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="30" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="5" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="7" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="3" name="Motor1_Curr">
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="GPIO4" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="Motor1_EN">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="29" pinfunction="GPIO0/XTAL_32K_P" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="Motor1_PWM">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="28" pinfunction="GPIO1/XTAL_32K_N" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="Motor2_Curr">
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="GPIO5" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="Motor2_EN">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="27" pinfunction="GPIO2" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="Motor2_PWM">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="26" pinfunction="GPIO3" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="RX_GPS">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="GPIO21/U0TXD" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="RX_MAG">
+      <node ref="U1" pin="8" pinfunction="GPIO6" pintype="bidirectional"/>
+      <node ref="U2" pin="10" pinfunction="RX" pintype="input"/>
+    </net>
+    <net code="15" name="Status_LED1">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="GPIO8" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="Status_LED2">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="GPIO9" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="Status_LED3">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="GPIO10" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="TX_GPS">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="GPIO20/U0RXD" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="TX_MAG">
+      <node ref="U1" pin="9" pinfunction="GPIO7" pintype="bidirectional"/>
+      <node ref="U2" pin="11" pinfunction="TX" pintype="output"/>
+    </net>
+    <net code="20" name="unconnected-(U1-Pad4)">
+      <node ref="U1" pin="4" pinfunction="RST" pintype="input+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U1-Pad13)">
+      <node ref="U1" pin="13" pinfunction="5V" pintype="power_in+no_connect"/>
+      <node ref="U1" pin="14" pinfunction="5V" pintype="power_in+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U1-Pad18)">
+      <node ref="U1" pin="18" pinfunction="GPIO19" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U1-Pad19)">
+      <node ref="U1" pin="19" pinfunction="GPIO18" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U2-Pad2)">
+      <node ref="U2" pin="2" pintype="no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U2-Pad3)">
+      <node ref="U2" pin="3" pintype="no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U2-Pad4)">
+      <node ref="U2" pin="4" pinfunction="CAL" pintype="input+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U2-Pad5)">
+      <node ref="U2" pin="5" pintype="no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U2-Pad8)">
+      <node ref="U2" pin="8" pinfunction="SDA" pintype="input+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U2-Pad9)">
+      <node ref="U2" pin="9" pinfunction="SCL" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>
